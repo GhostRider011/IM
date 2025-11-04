@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Personal Website</title>
+    <title>Isam Mohammed | Car Enthusiast & University Student</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +15,7 @@
   <body>
     <header class="hero" id="top">
       <nav class="hero__nav">
-        <a class="hero__brand" href="#top">MyName</a>
+        <a class="hero__brand" href="#top">Isam Mohammed</a>
         <button class="hero__menu-button" aria-expanded="false" aria-controls="nav-links">
           <span class="sr-only">Toggle navigation</span>
           <span class="hero__menu-line"></span>
@@ -24,18 +24,24 @@
         </button>
         <ul class="hero__nav-links" id="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#projects">Garage</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="hero__content">
         <p class="hero__eyebrow">Hello, I'm</p>
-        <h1 class="hero__title">Your Name</h1>
-        <p class="hero__subtitle">Designer · Developer · Lifelong Learner</p>
+        <h1 class="hero__title">Isam Mohammed</h1>
+        <p class="hero__subtitle">University Student · Car Enthusiast · Lifelong Learner</p>
+        <p class="hero__intro">
+          I love tuning performance, diving into automotive design, and sharing the thrill of
+          the open road. Join me as I balance studies, sports, and the pursuit of the perfect
+          drive.
+        </p>
         <div class="hero__actions">
-          <a class="button button--primary" href="#projects">View my work</a>
-          <a class="button button--ghost" href="#contact">Let's talk</a>
+          <a class="button button--primary" href="#gallery">See the rides</a>
+          <a class="button button--ghost" href="#contact">Let's connect</a>
         </div>
       </div>
       <div class="hero__scroll">
@@ -50,19 +56,21 @@
           <div class="section__grid section__grid--about">
             <div>
               <p>
-                I'm a multidisciplinary creator who loves crafting meaningful digital
-                experiences. Whether I'm writing code, sketching interfaces, or iterating on
-                product ideas, I always start by understanding the people I'm building for.
+                I'm a university student and devoted car enthusiast who believes every build
+                tells a story. Between lectures and lab work, I'm digging into the latest
+                engineering breakthroughs, detailing my favorite rides, and capturing those
+                perfect sunset cruises.
               </p>
               <p>
-                Outside of work you can usually find me exploring new coffee shops, hiking
-                nearby trails, or experimenting with photography.
+                When I'm not wrenching or studying, you'll find me gaming with friends, editing
+                photos for fun, or out on the pitch and court playing football, basketball,
+                cricket, and badminton to stay sharp and athletic.
               </p>
             </div>
             <ul class="about__highlights">
-              <li><span>5+</span> years building web experiences</li>
-              <li><span>100%</span> committed to continuous learning</li>
-              <li><span>∞</span> curiosity about how things work</li>
+              <li><span>4+</span> ongoing academic projects</li>
+              <li><span>24/7</span> passion for performance and design</li>
+              <li><span>100%</span> ready to collaborate and learn</li>
             </ul>
           </div>
         </div>
@@ -70,34 +78,52 @@
 
       <section class="section section--alt" id="projects">
         <div class="section__inner">
-          <h2 class="section__title">Featured Projects</h2>
+          <h2 class="section__title">Garage Highlights</h2>
           <div class="cards">
             <article class="card">
-              <div class="card__badge">2024</div>
-              <h3 class="card__title">Project Aurora</h3>
+              <figure class="card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=900&q=80"
+                  alt="Red sports car parked under neon lighting"
+                />
+              </figure>
+              <div class="card__badge">Tuning Log</div>
+              <h3 class="card__title">Turbocharged Street Build</h3>
               <p class="card__summary">
-                A responsive web app that helps remote teams brainstorm and prioritize ideas in
-                real-time using playful collaborative tools.
+                Documenting performance upgrades, dyno runs, and design tweaks while balancing
+                coursework. It's my rolling classroom for applying theory to the real world.
               </p>
-              <a class="card__link" href="#">Explore the case study</a>
+              <a class="card__link" href="#contact">Chat about the build</a>
             </article>
             <article class="card">
-              <div class="card__badge">2023</div>
-              <h3 class="card__title">Stellar Notes</h3>
+              <figure class="card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1549923746-c502d488b3ea?auto=format&fit=crop&w=900&q=80"
+                  alt="Classic muscle car driving along a coastal road"
+                />
+              </figure>
+              <div class="card__badge">Journal</div>
+              <h3 class="card__title">Weekend Road Stories</h3>
               <p class="card__summary">
-                A minimalist note-taking experience with intelligent tagging and focus mode for
-                writers and researchers.
+                Travelogues that blend scenic photography, route planning tips, and reflections
+                on automotive heritage for fellow enthusiasts.
               </p>
-              <a class="card__link" href="#">View on GitHub</a>
+              <a class="card__link" href="#gallery">View the routes</a>
             </article>
             <article class="card">
-              <div class="card__badge">2022</div>
-              <h3 class="card__title">Journey Journal</h3>
+              <figure class="card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1483721310020-03333e577078?auto=format&fit=crop&w=900&q=80"
+                  alt="Electric concept car with illuminated red details"
+                />
+              </figure>
+              <div class="card__badge">Research</div>
+              <h3 class="card__title">Campus EV Initiative</h3>
               <p class="card__summary">
-                A travel diary that turns your adventures into beautiful, sharable stories with
-                maps, photos, and timeline views.
+                Exploring sustainable transportation solutions with classmates, from charging
+                infrastructure studies to concept designs for future-ready vehicles.
               </p>
-              <a class="card__link" href="#">Read more</a>
+              <a class="card__link" href="#contact">Collaborate with me</a>
             </article>
           </div>
         </div>
@@ -108,42 +134,74 @@
           <h2 class="section__title">Skills & Tools</h2>
           <div class="skills">
             <div class="skills__group">
-              <h3>Development</h3>
+              <h3>Microsoft Suite</h3>
               <ul>
-                <li>JavaScript / TypeScript</li>
-                <li>React & Next.js</li>
-                <li>Node.js & Express</li>
-                <li>HTML5 / CSS3 / Web Accessibility</li>
+                <li>MS Access</li>
+                <li>Excel</li>
+                <li>Word</li>
+                <li>PowerPoint</li>
               </ul>
             </div>
             <div class="skills__group">
-              <h3>Design</h3>
+              <h3>Collaboration</h3>
               <ul>
-                <li>Product strategy & discovery</li>
-                <li>UI/UX design & prototyping</li>
-                <li>Design systems & documentation</li>
-                <li>User research & testing</li>
+                <li>Microsoft Teams</li>
+                <li>Outlook</li>
+                <li>SharePoint</li>
               </ul>
             </div>
             <div class="skills__group">
-              <h3>Toolkit</h3>
+              <h3>Creative & Lifestyle</h3>
               <ul>
-                <li>Figma, Sketch, Adobe CC</li>
-                <li>VS Code, Git, GitHub</li>
-                <li>Notion, Linear, Jira</li>
-                <li>Arc, Chrome DevTools</li>
+                <li>Basic photo editing (for hobby projects)</li>
+                <li>PC and console gaming</li>
+                <li>Athletics & fitness</li>
+                <li>Football, basketball, cricket, and badminton</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section section--alt" id="contact">
+      <section class="section section--alt" id="gallery">
+        <div class="section__inner">
+          <h2 class="section__title">Car Gallery</h2>
+          <p class="section__lead">
+            A curated mix of dream machines, from track-ready monsters to timeless classics that
+            inspire every new project.
+          </p>
+          <div class="gallery">
+            <figure class="gallery__item">
+              <img
+                src="https://images.unsplash.com/photo-1503731987616-2f56f1525abb?auto=format&fit=crop&w=1000&q=80"
+                alt="Low angle shot of a red performance coupe"
+              />
+              <figcaption>Performance coupe perfection in my favorite shade of red.</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="https://images.unsplash.com/photo-1471479917193-f00955256257?auto=format&fit=crop&w=1000&q=80"
+                alt="Vintage racing car on display in a garage"
+              />
+              <figcaption>Vintage craftsmanship that fuels my design inspiration.</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1000&q=80"
+                alt="Red supercar parked along a scenic overlook"
+              />
+              <figcaption>Chasing horizons and sketching future travel plans.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
         <div class="section__inner section__inner--narrow">
           <h2 class="section__title">Let's Connect</h2>
           <p class="section__lead">
-            I'm currently open to new opportunities, collaborations, and interesting
-            conversations. Drop me a note and I'll get back to you soon.
+            Whether you want to discuss campus collaborations, swap car stories, or plan the
+            next scenic drive, drop me a message and I'll reply soon.
           </p>
           <form class="contact-form">
             <div class="contact-form__row">
@@ -166,7 +224,7 @@
                 id="message"
                 name="message"
                 rows="4"
-                placeholder="Tell me about your project"
+                placeholder="Share your ideas or favorite car"
                 required
               ></textarea>
             </div>
@@ -178,11 +236,11 @@
 
     <footer class="footer">
       <div class="footer__inner">
-        <p>&copy; <span id="year"></span> Your Name. Crafted with care.</p>
+        <p>&copy; <span id="year"></span> Isam Mohammed. Crafted with passion.</p>
         <div class="footer__links">
           <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
           <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
-          <a href="mailto:hello@example.com">Email</a>
+          <a href="mailto:isam@example.com">Email</a>
         </div>
       </div>
     </footer>

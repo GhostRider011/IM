@@ -1,11 +1,11 @@
 :root {
-  --color-bg: #0f172a;
-  --color-bg-alt: #111c33;
-  --color-text: #f8fafc;
-  --color-muted: #cbd5f5;
-  --color-primary: #6ee7b7;
-  --color-primary-dark: #34d399;
-  --shadow-lg: 0 40px 80px rgba(15, 23, 42, 0.35);
+  --color-bg: #13070c;
+  --color-bg-alt: #1f0c15;
+  --color-text: #fef2f2;
+  --color-muted: #f9a8a8;
+  --color-primary: #f87171;
+  --color-primary-dark: #ef4444;
+  --shadow-lg: 0 40px 80px rgba(17, 9, 11, 0.35);
   --max-width: 1100px;
   --transition: 200ms ease;
 }
@@ -18,8 +18,9 @@
 
 body {
   font-family: 'Outfit', sans-serif;
-  background: radial-gradient(circle at top, rgba(79, 70, 229, 0.2), transparent 55%),
-    radial-gradient(circle at 30% 10%, rgba(16, 185, 129, 0.25), transparent 45%),
+  background: radial-gradient(circle at 15% 10%, rgba(248, 113, 113, 0.28), transparent 45%),
+    radial-gradient(circle at 80% 0%, rgba(244, 63, 94, 0.2), transparent 55%),
+    linear-gradient(180deg, rgba(76, 5, 25, 0.65), rgba(19, 7, 12, 0.95)),
     var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
@@ -65,7 +66,7 @@ img {
   position: absolute;
   inset: 0;
   z-index: -2;
-  background: linear-gradient(120deg, rgba(14, 116, 144, 0.15), transparent 60%);
+  background: linear-gradient(120deg, rgba(220, 38, 38, 0.18), transparent 60%);
 }
 
 .hero::after {
@@ -84,10 +85,10 @@ img {
   justify-content: space-between;
   padding: 0.75rem 1.5rem;
   backdrop-filter: blur(14px);
-  background: rgba(15, 23, 42, 0.7);
-  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(31, 12, 21, 0.8);
+  border: 1px solid rgba(248, 113, 113, 0.18);
   border-radius: 999px;
-  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.3);
+  box-shadow: 0 20px 45px rgba(17, 9, 11, 0.4);
   gap: 1.5rem;
 }
 
@@ -173,6 +174,13 @@ img {
   color: var(--color-muted);
 }
 
+.hero__intro {
+  font-size: 1rem;
+  color: rgba(254, 242, 242, 0.85);
+  max-width: 48ch;
+  margin: 0 auto 2.5rem;
+}
+
 .hero__actions {
   display: flex;
   justify-content: center;
@@ -199,9 +207,9 @@ img {
   content: '';
   width: 34px;
   height: 34px;
-  border: 1px solid rgba(226, 232, 240, 0.5);
+  border: 1px solid rgba(248, 113, 113, 0.35);
   border-radius: 999px;
-  background: linear-gradient(180deg, rgba(148, 163, 184, 0.15), transparent);
+  background: linear-gradient(180deg, rgba(248, 113, 113, 0.15), transparent);
   position: relative;
 }
 
@@ -221,18 +229,19 @@ img {
 
 .button--primary {
   background: var(--color-primary);
-  color: #064e3b;
+  color: #fff7f7;
   box-shadow: var(--shadow-lg);
 }
 
 .button--primary:hover,
 .button--primary:focus {
   background: var(--color-primary-dark);
+  color: #fff7f7;
   transform: translateY(-2px);
 }
 
 .button--ghost {
-  border: 1px solid rgba(226, 232, 240, 0.5);
+  border: 1px solid rgba(254, 202, 202, 0.45);
   color: var(--color-text);
 }
 
@@ -247,7 +256,7 @@ img {
 }
 
 .section--alt {
-  background: rgba(15, 23, 42, 0.5);
+  background: rgba(31, 12, 21, 0.65);
   backdrop-filter: blur(20px);
 }
 
@@ -300,8 +309,8 @@ img {
 }
 
 .about__highlights li {
-  background: rgba(15, 23, 42, 0.7);
-  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(31, 12, 21, 0.75);
+  border: 1px solid rgba(248, 113, 113, 0.2);
   padding: 1.5rem;
   border-radius: 1rem;
   display: flex;
@@ -324,10 +333,10 @@ img {
 
 .card {
   position: relative;
-  padding: 2.5rem 2rem;
+  padding: 2.5rem 2rem 2.25rem;
   border-radius: 1.5rem;
-  background: rgba(15, 23, 42, 0.75);
-  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(31, 12, 21, 0.8);
+  border: 1px solid rgba(248, 113, 113, 0.22);
   box-shadow: var(--shadow-lg);
   display: flex;
   flex-direction: column;
@@ -338,7 +347,20 @@ img {
 .card:hover,
 .card:focus-within {
   transform: translateY(-6px);
-  border-color: rgba(110, 231, 183, 0.6);
+  border-color: rgba(248, 113, 113, 0.6);
+}
+
+.card__media {
+  border-radius: 1.25rem;
+  overflow: hidden;
+  margin: -2.5rem -2rem 1rem;
+  border: 1px solid rgba(248, 113, 113, 0.25);
+}
+
+.card__media img {
+  height: 190px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .card__badge {
@@ -347,7 +369,7 @@ img {
   left: 2rem;
   padding: 0.35rem 0.75rem;
   border-radius: 999px;
-  background: rgba(110, 231, 183, 0.25);
+  background: rgba(248, 113, 113, 0.25);
   color: var(--color-primary);
   font-size: 0.75rem;
   letter-spacing: 0.1em;
@@ -369,6 +391,34 @@ img {
   color: var(--color-primary);
 }
 
+.gallery {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.gallery__item {
+  background: rgba(31, 12, 21, 0.75);
+  border: 1px solid rgba(248, 113, 113, 0.25);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery__item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.gallery__item figcaption {
+  padding: 1.25rem 1.5rem;
+  color: rgba(254, 242, 242, 0.85);
+  font-size: 0.95rem;
+}
+
 .skills {
   display: grid;
   gap: 2rem;
@@ -376,8 +426,8 @@ img {
 }
 
 .skills__group {
-  background: rgba(15, 23, 42, 0.75);
-  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(31, 12, 21, 0.8);
+  border: 1px solid rgba(248, 113, 113, 0.2);
   border-radius: 1.25rem;
   padding: 2rem;
   box-shadow: var(--shadow-lg);
@@ -419,8 +469,8 @@ img {
   width: 100%;
   padding: 0.85rem 1rem;
   border-radius: 0.85rem;
-  border: 1px solid rgba(148, 163, 184, 0.4);
-  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(248, 113, 113, 0.35);
+  background: rgba(31, 12, 21, 0.7);
   color: var(--color-text);
   font-size: 1rem;
   transition: border-color var(--transition), box-shadow var(--transition);
@@ -429,13 +479,13 @@ img {
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: rgba(110, 231, 183, 0.7);
-  box-shadow: 0 0 0 4px rgba(110, 231, 183, 0.2);
+  border-color: rgba(248, 113, 113, 0.75);
+  box-shadow: 0 0 0 4px rgba(248, 113, 113, 0.25);
 }
 
 .footer {
   padding: 3rem 1.5rem;
-  background: rgba(10, 15, 25, 0.85);
+  background: rgba(19, 7, 12, 0.9);
 }
 
 .footer__inner {
@@ -478,10 +528,10 @@ img {
     top: 110%;
     right: 1rem;
     flex-direction: column;
-    background: rgba(15, 23, 42, 0.92);
+    background: rgba(31, 12, 21, 0.92);
     padding: 1rem 1.5rem;
     border-radius: 1rem;
-    border: 1px solid rgba(148, 163, 184, 0.2);
+    border: 1px solid rgba(248, 113, 113, 0.25);
     box-shadow: var(--shadow-lg);
     transform: scale(0.95);
     transform-origin: top right;
