@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <nav class="hero__nav">
+        <a class="hero__brand" href="#top">MyName</a>
+        <button class="hero__menu-button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="hero__menu-line"></span>
+          <span class="hero__menu-line"></span>
+          <span class="hero__menu-line"></span>
+        </button>
+        <ul class="hero__nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Hello, I'm</p>
+        <h1 class="hero__title">Your Name</h1>
+        <p class="hero__subtitle">Designer · Developer · Lifelong Learner</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#projects">View my work</a>
+          <a class="button button--ghost" href="#contact">Let's talk</a>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <a href="#about" class="hero__scroll-link">Scroll</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="about">
+        <div class="section__inner">
+          <h2 class="section__title">About Me</h2>
+          <div class="section__grid section__grid--about">
+            <div>
+              <p>
+                I'm a multidisciplinary creator who loves crafting meaningful digital
+                experiences. Whether I'm writing code, sketching interfaces, or iterating on
+                product ideas, I always start by understanding the people I'm building for.
+              </p>
+              <p>
+                Outside of work you can usually find me exploring new coffee shops, hiking
+                nearby trails, or experimenting with photography.
+              </p>
+            </div>
+            <ul class="about__highlights">
+              <li><span>5+</span> years building web experiences</li>
+              <li><span>100%</span> committed to continuous learning</li>
+              <li><span>∞</span> curiosity about how things work</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="projects">
+        <div class="section__inner">
+          <h2 class="section__title">Featured Projects</h2>
+          <div class="cards">
+            <article class="card">
+              <div class="card__badge">2024</div>
+              <h3 class="card__title">Project Aurora</h3>
+              <p class="card__summary">
+                A responsive web app that helps remote teams brainstorm and prioritize ideas in
+                real-time using playful collaborative tools.
+              </p>
+              <a class="card__link" href="#">Explore the case study</a>
+            </article>
+            <article class="card">
+              <div class="card__badge">2023</div>
+              <h3 class="card__title">Stellar Notes</h3>
+              <p class="card__summary">
+                A minimalist note-taking experience with intelligent tagging and focus mode for
+                writers and researchers.
+              </p>
+              <a class="card__link" href="#">View on GitHub</a>
+            </article>
+            <article class="card">
+              <div class="card__badge">2022</div>
+              <h3 class="card__title">Journey Journal</h3>
+              <p class="card__summary">
+                A travel diary that turns your adventures into beautiful, sharable stories with
+                maps, photos, and timeline views.
+              </p>
+              <a class="card__link" href="#">Read more</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section__inner">
+          <h2 class="section__title">Skills & Tools</h2>
+          <div class="skills">
+            <div class="skills__group">
+              <h3>Development</h3>
+              <ul>
+                <li>JavaScript / TypeScript</li>
+                <li>React & Next.js</li>
+                <li>Node.js & Express</li>
+                <li>HTML5 / CSS3 / Web Accessibility</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h3>Design</h3>
+              <ul>
+                <li>Product strategy & discovery</li>
+                <li>UI/UX design & prototyping</li>
+                <li>Design systems & documentation</li>
+                <li>User research & testing</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h3>Toolkit</h3>
+              <ul>
+                <li>Figma, Sketch, Adobe CC</li>
+                <li>VS Code, Git, GitHub</li>
+                <li>Notion, Linear, Jira</li>
+                <li>Arc, Chrome DevTools</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="contact">
+        <div class="section__inner section__inner--narrow">
+          <h2 class="section__title">Let's Connect</h2>
+          <p class="section__lead">
+            I'm currently open to new opportunities, collaborations, and interesting
+            conversations. Drop me a note and I'll get back to you soon.
+          </p>
+          <form class="contact-form">
+            <div class="contact-form__row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="contact-form__row">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="contact-form__row">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Tell me about your project"
+                required
+              ></textarea>
+            </div>
+            <button class="button button--primary" type="submit">Send message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <p>&copy; <span id="year"></span> Your Name. Crafted with care.</p>
+        <div class="footer__links">
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:hello@example.com">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
