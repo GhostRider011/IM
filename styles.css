@@ -344,28 +344,23 @@ main {
 }
 
 .card__summary {
-  margin: 1rem 1.5rem 1.5rem;
+  margin: 1rem 1.5rem 0.75rem;
   color: rgba(255, 240, 240, 0.75);
 }
 
-.card__link {
-  margin: auto 1.5rem 1.75rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-}
-
-.card__link::after {
-  content: '↗';
+.card__details {
+  margin: 0 1.5rem 1.75rem;
   font-size: 0.9rem;
-  transition: transform var(--transition);
+  color: rgba(255, 240, 240, 0.65);
 }
 
-.card__link:hover::after,
-.card__link:focus::after {
-  transform: translate(3px, -3px);
+.card__details strong {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: 0.35rem;
 }
 
 .skills {
