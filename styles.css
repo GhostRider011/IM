@@ -192,6 +192,11 @@ p + p {
   margin-bottom: 2rem;
 }
 
+.hero__subtitle--secondary {
+  margin-top: -1rem;
+  color: rgba(255, 240, 240, 0.75);
+}
+
 .hero__actions {
   display: flex;
   justify-content: center;
@@ -300,10 +305,37 @@ main {
   margin-bottom: 0.5rem;
 }
 
+.about__goals {
+  margin-top: 3rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.about__goals h3 {
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+  color: var(--color-primary-light);
+}
+
+.about__goals ul {
+  display: grid;
+  gap: 0.75rem;
+  color: rgba(255, 240, 240, 0.85);
+  line-height: 1.6;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2.5rem;
+}
+
+.cards--stacked {
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
 }
 
 .card {
@@ -315,6 +347,32 @@ main {
   display: flex;
   flex-direction: column;
   transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.card--text {
+  padding: 2.25rem 2.5rem;
+  gap: 1.25rem;
+}
+
+.card--text .card__badge {
+  margin: 0;
+  width: fit-content;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 240, 240, 0.8);
+  letter-spacing: 0.2em;
+}
+
+.card--text .card__title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.card--text .card__summary {
+  margin: 0;
+  color: rgba(255, 240, 240, 0.78);
 }
 
 .card:hover,
@@ -361,6 +419,33 @@ main {
   text-transform: uppercase;
   color: var(--color-muted);
   margin-bottom: 0.35rem;
+}
+
+.projects__intro {
+  display: grid;
+  gap: 2rem;
+}
+
+.projects__divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0)
+  );
+  margin: 3.5rem 0;
+}
+
+.projects__cars {
+  display: grid;
+  gap: 2rem;
+}
+
+.section__subtitle {
+  font-size: 1.5rem;
+  color: var(--color-primary-light);
+  margin-bottom: 0.75rem;
 }
 
 .skills {
